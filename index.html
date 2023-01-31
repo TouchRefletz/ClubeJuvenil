@@ -46,7 +46,10 @@ nav {
   font-family: "Coolvetica", sans-serif;
   background: #23232e;
   height: 18vh;
+  width: 100%;
   overflow: visible;
+  z-index: 2;
+  position: fixed;
 }
 .nav-list {
   list-style: none;
@@ -59,6 +62,7 @@ nav {
 .mobile-menu {
   display: none;
   cursor: pointer;
+  z-index: 0;
 }
 .mobile-menu div {
   width: 8vh;
@@ -66,7 +70,7 @@ nav {
   background: #fff;
   margin: 4px;
   transition: 0.3s;
-  z-index: 2;
+  z-index: 0;
 }
 @media (max-width: 999px) {
   body {
@@ -74,7 +78,7 @@ nav {
   }
   .nav-list {
     position: absolute;
-    top: 14vh;
+    top: 10vh;
     right: 0;
     width: 50vw;
     height: 92vh;
@@ -91,6 +95,8 @@ nav {
   }
   .mobile-menu {
     display: block;
+    position: fixed;
+    right: 0vh;
     z-index: 2;
   }
   
@@ -838,6 +844,70 @@ nav {
         font-size: 144px;
         color: purple;
       }
+      #texto46 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 5260px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto46 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color: purple;
+      }
+      #texto47 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 5370px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto47 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color: purple;
+      }
+      #texto48 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 5480px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto48 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color: purple;
+      }
+      #texto49 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 5590px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto49 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color: purple;
+      }
       @keyframes text-scroll {
         from {
           transform: translateX(0px);
@@ -916,13 +986,23 @@ align-items: center;
 font-family: "Coolvetica", sans-serif;
 font-size: 6vh;
       }
-      #textodorodape {
+      #textodorodape1 {
        position: relative;
+      }
+      #textodorodape2 {
+       font-size: 4vh;
+      }
+      #textodorodape3 {
+       font-size: 6vh;
+      }
+      #textodorodapeinvisivel {
+       font-size: 3vh;
+       color: transparent;
       }
       #btntop {
         position: fixed;
         bottom: 5vh;
-        right: 5vh;
+        right: 1vh;
         width: 15vh;
         height: 15vh;
         background-color: rgba(0, 247, 255, 0.5);
@@ -932,7 +1012,7 @@ font-size: 6vh;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        z-index: 2;
+        z-index: 1;
       }
 
       .arrow {
@@ -957,28 +1037,41 @@ font-size: 6vh;
 
       ::-webkit-scrollbar-thumb {
         background-color: purple;
-        border-radius: 50px;
       }
-</style>
+      nav-list.active {
+        position: fixed;
+        top: 10;
+        left: 0;
+      }
+      .mobile-menu.active {
+        position: fixed;
+      }
+        #twitter:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+        #youtube:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
   </style> 
 </head>
 <body>
   <header id="barra">
     <nav>
-      <a id="logo" href="/">Clube Juvenil</a> 
+      <a id="logo" href="site.html">Clube Juvenil</a> 
       <div class="mobile-menu">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
       <ul class="nav-list">
-        <li><a href="/">Sobre o Clube</a></li>
-        <li><a href="/">Notícias</a></li>
-        <li><a href="/">Contato</a></li>
+        <li><a href="sobre o clube.html">Sobre o Clube</a></li>
+        <li><a href="#rodape">Contato</a></li>
       </ul>
     </nav>
    </header>
    <main></main>
-   <script>
+  <script>
    class MobileNavbar {
   constructor(mobileMenu, navList, navLinks) {
     this.mobileMenu = document.querySelector(mobileMenu);
@@ -1016,14 +1109,8 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list",
   ".nav-list li",
 );
-mobileNavbar.init();
-    </script>
-    <script>
-   const reloadPageText =  document.getElementById("logo");
 
-reloadPageText.addEventListener("click", function() {
-  location.reload();
-});
+mobileNavbar.init();
     </script>
 
       <div class="retangulo1">
@@ -1212,6 +1299,18 @@ reloadPageText.addEventListener("click", function() {
       <p id="texto45">
         <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
       </p>
+      <p id="texto46">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto47">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto48">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto49">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
       <div id="btntop">
         <i class="arrow up"></i>
       </div>
@@ -1224,7 +1323,7 @@ reloadPageText.addEventListener("click", function() {
 document.addEventListener("scroll",ocultar)
 
         function ocultar() {
-          if(window.scrollY > 100){
+          if(window.scrollY > 300){
             btn.style.display = "flex"
           } else {
             btn.style.display = "none"
@@ -1234,10 +1333,16 @@ document.addEventListener("scroll",ocultar)
         ocultar()
       </script>
       <footer id="rodape">
-        <p id="textodorodape">Copyright ©2023 Example Co.</p>
-        <button style="position: relative; width: 20vh; height: 8vh; font-family: Coolvetica, sans-serif; font-size: 4vh; border-radius: 1vh;">Notícias</button>
-        <button style="position: relative; width: 28vh; height: 8vh; font-family: Coolvetica, sans-serif; font-size: 4vh; border-radius: 1vh;">Sobre o Clube</button>
-        <button style="position: relative; width: 20vh; height: 8vh; font-family: Coolvetica, sans-serif; font-size: 4vh; border-radius: 1vh;">Contato</button>
+       
+        <a href="sobre o clube.html"><button style="position: relative; width: 28vh; height: 8vh; font-family: Coolvetica, sans-serif; font-size: 4vh; border-radius: 1vh;">Sobre o Clube</button></a>
+        <p id="textodorodapeinvisivel">blalblalblalblalblalblalblalbla</p>
+        <p id="textodorodape1">Contato:</p>
+       <p id="textodorodape2">Email: ???@gmail.com</p>
+       <p id="textodorodapeinvisivel">blalblalblalblalblalblalblalbla</p>
+       <p id="textodorodape3">Redes Sociais:</p>
+       <p id="textodorodapeinvisivel">blalblalblalblalblalblalblalba</p>
+       <a href="https://twitter.com/home"><img id="twitter" src="twitter.png" style="width: 8h; height: 6vh;"></a>
+       <a href="https://www.youtube.com/"><img id="youtube" src="youtube.png" style="width: 8h; height: 6vh;"></a>
       </footer> 
 </body>
 </html>  

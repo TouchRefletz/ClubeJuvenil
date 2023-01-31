@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head id="config">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Meu Site Responsivo</title>
+  <style>
+@font-face {
+  font-family: "Coolvetica";
+  src: url("coolvetica rg.otf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+        background-image: url('fundo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100%;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  opacity: 0.7;
+}
+#barra {
+  z-index: 1;
+}
+#logo {
+  font-size:8vh;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Coolvetica", sans-serif;
+  background: #23232e;
+  height: 18vh;
+  width: 100%;
+  overflow: visible;
+  z-index: 2;
+  position: fixed;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  z-index: 0;
+}
+.mobile-menu div {
+  width: 8vh;
+  height: 1vh;
+  background: #fff;
+  margin: 4px;
+  transition: 0.3s;
+  z-index: 0;
+}
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    right: 0vh;
+    z-index: 2;
+  }
+  
+}
+.nav-list.active {
+  transform: translateX(0);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#texto {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 90px;
+        cursor: default;
+        user-select: none;
+      }      
+      #texto span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto1 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 200px;
+        cursor: default;
+        user-select: none;
+      }     
+      #texto1 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto2 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 310px;
+        cursor: default;
+        user-select: none;
+      }      
+      #texto2 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto3 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 420px;
+        cursor: default;
+        user-select: none;
+      }      
+      #texto3 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }      
+      #texto4 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 530px;
+        cursor: default;
+        user-select: none;
+      }      
+      #texto4 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto5 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 640px;
+        cursor: default;
+        user-select: none;
+      }      
+      #texto5 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto6 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 750px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto6 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto7 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 860px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto7 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto8 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 970px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto8 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto9 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 1190px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto9 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto10 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 1300px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto10 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto11 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 1410px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto11 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto12 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 1520px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto12 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto13 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 1630px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto13 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto14 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 1740px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto14 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto15 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 1850px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto15 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto16 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 1960px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto16 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto17 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 2070px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto17 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto18 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 2180px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto18 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto19 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 2290px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto19 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto20 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 2400px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto20 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto21 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 2510px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto21 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto22 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 2620px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto22 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto23 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 2730px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto23 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      #texto24 {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        top: 2840px;
+        cursor: default;
+        user-select: none;
+        user-select: none;
+      }
+      #texto24 span {
+        display: inline-block;
+        animation: text-scroll 5s linear infinite;
+        font-family: "Coolvetica", sans-serif;
+        font-size: 144px;
+        color:rgb(29, 155, 29);
+      }
+      @keyframes text-scroll {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(-808px);
+        }
+      }
+      .retangulo1 {
+        width: 94%;
+        height: auto;
+        border-radius: 3vh; 
+        background-color: rgb(255, 255, 255);
+        z-index: 1;
+        font-family: "Coolvetica", sans-serif;
+        position: absolute;
+        top: 20vh;
+			left: 50%;
+			transform: translate(-50%, 0);
+      background-image: url(quem\ somos.png);
+      background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity: 100%;
+      }
+      .retangulo2 {
+        width: 94%;
+        height: auto;
+        border-radius: 3vh; 
+        background-color: rgb(255, 255, 255);
+        z-index: 1;
+        font-family: "Coolvetica", sans-serif;
+        position: absolute;
+        top: 120vh;
+			left: 50%;
+			transform: translate(-50%, 0);
+      }
+      @media (max-width: 380px) {
+       #foto1 {
+        opacity: 0;
+        transition: 0.5s ease-out;
+       } 
+      }
+      @media (min-width: 380px) {
+       #foto1 {
+        opacity: 1;
+        transition: 0.5s ease-in;
+       } 
+      }
+      @media (max-width: 380px) {
+       #foto2 {
+        opacity: 0;
+        transition: 0.5s ease-out;
+       } 
+      }
+      @media (min-width: 380px) {
+       #foto2 {
+        opacity: 1;
+        transition: 0.5s ease-in;
+       } 
+      }
+      #botao1 {
+        display: flex;
+  justify-content: end;
+      }
+      #rodape {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+z-index: 0.5;
+position: relative;
+width: 100vt;
+height: auto;
+align-items: center;
+font-family: "Coolvetica", sans-serif;
+font-size: 6vh;
+      }
+      #textodorodape1 {
+       position: relative;
+      }
+      #textodorodape2 {
+       font-size: 4vh;
+      }
+      #textodorodape3 {
+       font-size: 6vh;
+      }
+      #textodorodapeinvisivel {
+       font-size: 3vh;
+       color: transparent;
+      }
+      #btntop {
+        position: fixed;
+        bottom: 5vh;
+        right: 1vh;
+        width: 15vh;
+        height: 15vh;
+        background-color: rgba(0, 247, 255, 0.5);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 1;
+      }
+
+      .arrow {
+        border: solid rgba(29, 155, 29, 0.5);
+        border-width: 0 3vh 3vh 0;
+        padding: 2vh;
+        display: inline-block;
+        position: relative;
+        top: 1vh;
+      }
+
+      .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+      }  
+
+      ::-webkit-scrollbar {
+        width: 2vh;
+        background-color: rgb(0, 247, 255);
+        border: 1vt solid white;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: rgb(29, 155, 29);
+      }
+      nav-list.active {
+        position: fixed;
+        top: 10;
+        left: 0;
+      }
+      .mobile-menu.active {
+        position: fixed;
+      }
+        #twitter:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+        #youtube:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+  </style> 
+</head>
+<body>
+  <header id="barra">
+    <nav>
+      <a id="logo" href="sobre o clube.html">Clube Juvenil</a> 
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      <ul class="nav-list">
+        <li><a href="site.html">Voltar ao Site Principal</a></li>
+        <li><a href="#rodape">Contato</a></li>
+      </ul>
+    </nav>
+   </header>
+   <main></main>
+  <script>
+   class MobileNavbar {
+  constructor(mobileMenu, navList, navLinks) {
+    this.mobileMenu = document.querySelector(mobileMenu);
+    this.navList = document.querySelector(navList);
+    this.navLinks = document.querySelectorAll(navLinks);
+    this.activeClass = "active";
+    this.handleClick = this.handleClick.bind(this);
+  }
+  animateLinks() {
+    this.navLinks.forEach((link, index) => {
+      link.style.animation
+        ? (link.style.animation = "")
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 7 + 0.3
+          }s`);
+    });
+  }
+  handleClick() {
+    this.navList.classList.toggle(this.activeClass);
+    this.mobileMenu.classList.toggle(this.activeClass);
+    this.animateLinks();
+  }
+  addClickEvent() {
+    this.mobileMenu.addEventListener("click", this.handleClick);
+  }
+  init() {
+    if (this.mobileMenu) {
+      this.addClickEvent();
+    }
+    return this;
+  }
+}
+const mobileNavbar = new MobileNavbar(
+  ".mobile-menu",
+  ".nav-list",
+  ".nav-list li",
+);
+mobileNavbar.init();
+    </script>
+
+      <div class="retangulo1">
+        <p style="position: relative; right: 1vh; color: black; font-size:5vh; text-align: right; user-select: none;">Quem somos</p>
+        <p style="position: relative; right: 1vh; color: black; font-size:5vh; text-align: right; user-select: none;">Nós a final?</p>
+        <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+         <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+         <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+         <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+         <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+         <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+         <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+         <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+         <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+         <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+         <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+         <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+         <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+        <p style="position: relative; right: 1vh; color: black; font-size:2vh; text-align: right; user-select: none;">Nós somos Willian (Líder)</p>
+        <p style="position: relative; right: 1vh; color: black; font-size:2vh; text-align: right; user-select: none;">???,</p>
+          <p style="position: relative; right: 1vh; color: black; font-size:2vh; text-align: right; user-select: none;">Alunos da Escola Álvaro de Souza Vieira,</p>
+          <p style="position: relative; right: 1vh; color: black; font-size:2vh; text-align: right; user-select: none;">em Ribeirão Pires,</p>
+          <p style="position: relative; right: 1vh; color: black; font-size:2vh; text-align: right; user-select: none;">que criamos um projeto para o</p>
+          <p style="position: relative; right: 1vh; color: black; font-size:2vh; text-align: right; user-select: none;">clube juvenil da nossa escola,</p>
+          <p style="position: relative; right: 1vh; color: black; font-size:2vh; text-align: right; user-select: none;">e utilizaremos esse site e outras redes</p>
+          <p style="position: relative; right: 1vh; color: black; font-size:2vh; text-align: right; user-select: none;">sociais para se comunicarmos com os outros alunos!</p>
+          <p style="position: relative; right: 1vh; color: transparent; font-size:2vh; text-align: right; cursor: default; user-select: none;">blablalbalblalblalblalblalbalblalblalblalblalblalbla</p>
+    </div>
+    
+  <p id="texto">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto1">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto2">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto3">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto4">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto5">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto6">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto7">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto8">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto9">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto10">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto11">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto12">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto13">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto14">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto15">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto16">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto17">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto18">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto19">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto20">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto21">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto22">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto23">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <p id="texto24">
+        <span>Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil Clube Juvenil</span>
+      </p>
+      <div id="btntop">
+        <i class="arrow up"></i>
+      </div>
+      <script>
+        const btn = document.getElementById("btntop")
+        btn.addEventListener("click", function(){
+          window.scrollTo(0,0)
+        })
+      
+document.addEventListener("scroll",ocultar)
+
+        function ocultar() {
+          if(window.scrollY > 300){
+            btn.style.display = "flex"
+          } else {
+            btn.style.display = "none"
+          }
+        }
+
+        ocultar()
+      </script>
+      <footer id="rodape">
+       
+        <a href="site.html"><button style="position: relative; width: 28vh; height: 12vh; font-family: Coolvetica, sans-serif; font-size: 4vh; border-radius: 1vh;">Voltar a página principal</button></a>
+        <p id="textodorodapeinvisivel">blalblalblalblalblalblalblalbla</p>
+        <p id="textodorodape1">Contato:</p>
+       <p id="textodorodape2">Email: ???@gmail.com</p>
+       <p id="textodorodapeinvisivel">blalblalblalblalblalblalblalbla</p>
+       <p id="textodorodape3">Redes Sociais:</p>
+       <p id="textodorodapeinvisivel">blalblalblalblalblalblalblalba</p>
+       <a href="https://twitter.com/home"><img id="twitter" src="twitter verde.png" style="width: 8h; height: 6vh;"></a>
+       <a href="https://www.youtube.com/"><img id="youtube" src="youtube verde.png" style="width: 8h; height: 6vh;"></a>
+      </footer> 
+</body>
+</html>  

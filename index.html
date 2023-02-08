@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head id="config">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" href="foto do topo.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+<!-- TÍTULO DA PÁGINA -->
+  <title>Clube Juvenil</title>
+<!-- TÍTULO DA PÁGINA -->
+</head>
+<body>
+  <!-- BARRA DO TOPO -->
+  <header id="barra">
+    <nav>
+      <p id="logo" style="transition: none;">Clube Juvenil</p> 
+      <div class="mobile-menu">
+        <div style="transition: none;" class="line1"></div>
+        <div style="transition: none;" class="line2"></div>
+        <div style="transition: none;" class="line3"></div>
+      <ul class="nav-list">
+        <li><a href="sobre o clube.html" style="text-decoration: none; color: white;">Sobre o Clube</a></li>
+        <li><a href="#rodape" style="text-decoration: none; color: white;">Contato</a></li>
+      </ul>
+    </nav>
+   </header>
+<!-- BARRA DO TOPO -->
+
+<!-- JAVASCRIPT -->
+   <script src="script.js"></script>
+<!-- JAVASCRIPT -->   
+ 
+<!-- FUNDO -->
+ <div class="fundo"></div>
+<!-- FUNDO -->
+
+  <!-- RETÂNGULO 1 -->    
+<div class="retangulotopo" style="background-image: url(Bem-Vindo.png);">
+        <p id="titulobanner">Seja Muito Bem Vindo ao Site do Clube Juvenil de Influencer Digital!</p>
+        <p id="textobanner">Neste Site iremos informar tudo o que acontece no Clube Juvenil de Influencer digital da Escola Álvaro de Souza Vieira,
+        em Ribeirão Pires, caso você seja membro deste clube, seja bem vindo e fique informado sobre os bastidores de tudo o que acontece! </p> 
+    </div>
+    <!-- RETÂNGULO 1 --> 
+    
+    <!-- RETÂNGULO 2 --> 
+    <div class="retangulo" style="background-image: url(PDF.png);">
+      <p id="titulobanner">Clique no Link abaixo para baixar o PDF de todas as aulas do Clube Juvenil!</p>
+      <p id="textobanner">Clique <a id="textobannerlink" href="Planejamento do Clube Juvenil de Influencer Digital 2023.pdf" download>Aqui</a>
+         para baixar o PDF onde contém todos os planejamentos de aulas para o primeiro semestre de 2023!</p>
+      
+    </div>
+    <!-- RETÂNGULO 2 -->
+    
+    <!-- TEXTOS DO FUNDO --> 
+  
+      <!-- TEXTOS DO FUNDO --> 
+      
+      <!-- BOTÃO DE VOLTAR AO TOPO --> 
+      <div id="btntop">
+        <i class="arrow up"></i>
+      </div>
+      <script>
+        // CÓDIGO DE VOLTAR AO TOPO DA PÁGINA
+  const btn = document.getElementById("btntop")
+  btn.addEventListener("click", function(){
+    window.scrollTo(0,0)
+  })
+
+document.addEventListener("scroll",ocultar)
+
+  function ocultar() {
+    if(window.scrollY > 300){
+      btn.style.display = "flex"
+    } else {
+      btn.style.display = "none"
+    }
+  }
+
+  ocultar()
+// CÓDIGO DE VOLTAR AO TOPO DA PÁGINA
+      </script>
+      <!-- BOTÃO DE VOLTAR AO TOPO --> 
+
+      <!-- RODAPÉ -->
+      <footer id="rodape">
+        <a href="sobre o clube.html"><button id="botaointeracao" style="color:black">Sobre o Clube</button></a>
+        <p id="titulorodape">Contato:</p>
+       <p id="textorodape">Email: ???@gmail.com</p>
+       <p id="titulorodape">Redes Sociais:</p>
+       <a href="https://twitter.com/"><img id="redessociais" src="twitter.png"></a>
+       <a href="https://www.youtube.com/"><img id="redessociais" src="youtube.png"></a>
+      </footer> 
+      <!-- RODAPÉ -->
+</body>
+</html>  

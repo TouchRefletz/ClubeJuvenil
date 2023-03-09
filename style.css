@@ -80,6 +80,7 @@
     .nav-list {
       position: fixed;
       right: 0;
+      top: 18vh;
       width: 50vw;
       height: 92vh;
       background: #23232e;

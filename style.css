@@ -14,13 +14,7 @@
     opacity: 0.7;
   }
   body {
-    background-image: url(Fundo.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+    background-image: linear-gradient(to bottom left, purple, blue);
   }
   #barra {
     z-index: 1;

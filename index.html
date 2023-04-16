@@ -40,7 +40,7 @@
 link.addEventListener('click', function(event) {
   event.preventDefault();
   const section = document.querySelector('#noticiaslink');
-  const position = section.offsetTop * 7; // Define a posição de rolagem em 50%
+   const position = section.getBoundingClientRect().top + window.scrollY - 200;
   window.scrollTo({
     top: position,
     behavior: 'smooth' // Define uma rolagem suave até a nova posição

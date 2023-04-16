@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head id="config">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" href="https://uploaddeimagens.com.br/images/004/431/549/thumb/foto_do_topo.png?1681509021" alt="imagem do topo da página" type="image/png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+<!-- TÍTULO DA PÁGINA -->
+  <title>Clube Juvenil</title>
+<!-- TÍTULO DA PÁGINA -->
+</head>
+<body>
+  <!-- BARRA DO TOPO -->
+  <header id="barra">
+    <nav>
+      <p id="logo" style="transition: none;">Clube Juvenil</p> 
+      <div class="mobile-menu">
+        <div style="transition: none;" class="line1"></div>
+        <div style="transition: none;" class="line2"></div>
+        <div style="transition: none;" class="line3"></div>
+      <ul class="nav-list">
+        <li><a href="#noticiaslink" style="text-decoration: none; color: white;">Notícias</a></li>
+        <li><a href="#rodape" style="text-decoration: none; color: white;">Contato</a></li>
+      </ul>
+    </nav>
+   </header>
+<!-- BARRA DO TOPO -->
+
+<!-- JAVASCRIPT -->
+   <script src="script.js"></script>
+   <script>
+    const link = document.querySelector('a[href="#noticiaslink"]');
+link.addEventListener('click', function(event) {
+  event.preventDefault();
+  const section = document.querySelector('#noticiaslink');
+  const position = section.offsetTop * 7; // Define a posição de rolagem em 50%
+  window.scrollTo({
+    top: position,
+    behavior: 'smooth' // Define uma rolagem suave até a nova posição
+  });
+});
+   </script>
+  
+<!-- JAVASCRIPT -->   
+ 
+<!-- FUNDO -->
+ <div class="fundo"></div>
+<!-- FUNDO -->
+
+ <!-- RETÂNGULO 1 -->    
+<div class="retangulotopo" style="background-image: linear-gradient(to bottom left, rgb(68, 215, 252), rgb(151, 62, 252));">
+        <p id="titulobanner">Seja Muito Bem Vindo ao Site do Clube Juvenil de Influencer Digital!</p>
+        <p id="textobanner">Neste Site iremos informar tudo o que acontece no Clube Juvenil de Influencer digital da Escola Álvaro de Souza Vieira,
+        em Ribeirão Pires, caso você seja membro deste clube, seja bem vindo e fique informado sobre os bastidores de tudo o que acontece! </p> 
+    </div>
+    <!-- RETÂNGULO 1 --> 
+  
+    <!-- RETÂNGULO 2 --> 
+<div class="retangulo" style="background-image: linear-gradient(to bottom left, rgb(0, 136, 79), rgb(106, 252, 62));">
+  <p id="titulobanner" style="text-align: left; margin-right: 0vh; margin-left: 1%;">Quem Somos nós a final?</p>
+  <p id="textobanner" style="text-align: left; margin-left: 1vh; margin-right: 15%;">Nós somos um Clube Juvenil da Escola Àlvaro de Souza
+      Vieira, que tem como equipe principal, Willian (Líder), e Daniel (Vice-Líder) e assim,
+      utilizaremos este site e nossas outras redes sociais (onde você pode conferir
+      no <a href="#rodape" style="text-decoration: none; color: white;">Rodapé</a> da página) para comunicarmos com outros alunos!</p> 
+     
+</div>
+    <!-- RETÂNGULO 2 -->
+    
+<!-- NOTICIAS --> 
+
+    <div class="retangulo" style="background-color: rgb(255, 255, 255, 0); height: 100%;">
+
+  <div class="noticias"> 
+        <div class="noticia">
+          <h1 id="noticiaslink" style="overflow: hidden; text-overflow: ellipsis;">Atualização 4.0</h1>
+          <img src="https://i.pinimg.com/736x/4e/b0/cd/4eb0cdedf4406664e5e73634f27c29e3.jpg" alt="Imagem da notícia 1">
+          <div class="mais-info">
+            <h2>Atualização 4.0</h2>
+            <p>Todas as mudanças que aconteceram no site na troca da versão 3.0 para a versão 4.0!</p>
+            <a class="textodobotao" href="noticia-1.html" target="_blank" style="background-color: transparent; color: white;">Clique para Ler mais</a>
+          </div>
+        </div>
+        <div class="noticia">
+          <h1 style="overflow: hidden; text-overflow: ellipsis;">Aula de 17/04</h1>
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dGVjaHxlbnwwfHwwfHw%3D&w=1000&q=80" alt="Imagem da notícia 2">
+          <div class="mais-info">
+            <h2>Aula de 17/04</h2>
+            <p>Veja o Conteúdo planejado para a nossa próxima aula.</p>
+            <a class="textodobotao" href="noticia-2.html" target="_blank" style="background-color: transparent; color: white;">Clique para Ler mais</a>
+          </div>
+        </div>
+      </div>      
+    </div>
+
+<!-- NOTICIAS --> 
+
+    <!-- TEXTOS DO FUNDO --> 
+  
+      <!-- TEXTOS DO FUNDO --> 
+      
+      <!-- BOTÃO DE VOLTAR AO TOPO --> 
+      <div id="btntop">
+        <i class="arrow up"></i>
+      </div>
+      <script>
+        // CÓDIGO DE VOLTAR AO TOPO DA PÁGINA
+  const btn = document.getElementById("btntop")
+  btn.addEventListener("click", function(){
+    window.scrollTo(0,0)
+  })
+
+document.addEventListener("scroll",ocultar)
+
+  function ocultar() {
+    if(window.scrollY > 300){
+      btn.style.display = "flex"
+    } else {
+      btn.style.display = "none"
+    }
+  }
+
+  ocultar()
+// CÓDIGO DE VOLTAR AO TOPO DA PÁGINA
+      </script>
+      <!-- BOTÃO DE VOLTAR AO TOPO --> 
+
+      <!-- RODAPÉ -->
+      <footer id="rodape">
+        <p id="titulorodape">Contato:</p>
+       <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBlSMTgnjsChbdhWMGNBfzBZMGrqMLRBsMLzTBrwmkzXLPgmNHPBWDRNDgvdjkmchVgNvh" id="textorodape">Clique aqui para enviar um e-mail para a gente!</a>
+       <p id="titulorodape">Redes Sociais:</p>
+       <a href="https://twitter.com/WillianCamposC1"><img id="redessociais" src="https://uploaddeimagens.com.br/images/004/431/535/thumb/twitter.png?1681508758"></a>
+       <a href="http://www.youtube.com/channel/UCaSZNY_P4NlOfTXLp2E2mJg"><img id="redessociais" src="https://uploaddeimagens.com.br/images/004/431/551/thumb/youtube.png?1681509125"></a>
+        <a href="https://www.instagram.com/clubejuvenilinfluencerdigital/"><img id="redessociais" src="https://uploaddeimagens.com.br/images/004/431/539/thumb/instagram.png?1681508831"></a>
+       <a href="https://www.tiktok.com/@clubeinfluencerdigital"><img id="redessociais" src="https://uploaddeimagens.com.br/images/004/431/523/thumb/tiktok.png?1681508502"></a>
+       <p id="titulorodape">Redes Sociais da Escola:</p>
+       <a href="https://www.facebook.com/people/EE-ALVARO-DE-SOUZA-VIEIRA/100064028055280/"><img id="redessociais" src="https://uploaddeimagens.com.br/images/004/431/546/thumb/facebook.png?1681508902"></a>
+       <a href="https://www.instagram.com/escola_asv/"><img id="redessociais" src="https://uploaddeimagens.com.br/images/004/431/539/thumb/instagram.png?1681508831"></a>
+      </footer> 
+      <!-- RODAPÉ -->
+</body>
+</html>  

@@ -1,0 +1,517 @@
+/* CÓDIGO DO MENU DA BARRA DO TOPO */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  a:hover {
+    opacity: 0.7;
+  }
+  body {
+    background-image: linear-gradient(to bottom left, purple, blue);
+  }
+  #barra {
+    z-index: 1;
+  }
+  #logo {
+    font-size: 6vh;
+    text-transform: uppercase;
+    letter-spacing: 1vh;
+    transition: none;
+    width: 100%;
+    text-overflow: hidden;
+    margin-left: 1vh;
+    text-decoration: none;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select: none;
+    margin-right: 8vh;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Coolvetica", sans-serif;
+    background: #23232e;
+    height: 18vh;
+    width: 100%;
+    overflow: visible;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    transition: none;
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  .nav-list li {
+    letter-spacing: 4vt;
+    margin-left: 10vt;
+  }
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 0;
+  }
+  .mobile-menu div {
+    width: 6vh;
+    height: 1vh;
+    background: #fff;
+    margin-top: 1vh;
+    margin-right: 0.5vh;
+    margin-bottom: 1vh;
+    z-index: 0;
+  }
+    .nav-list {
+      position: fixed;
+      right: 0;
+      top: 18vh;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+
+     .nav-list li {
+      font-size: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1vh;
+      transition: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+
+    .mobile-menu {
+      display: block;
+      position: fixed;
+      right: 0vh;
+      z-index: 2;
+      transition: none;
+    }
+ 
+  .nav-list.active {
+    transform: translateX(0);
+    position: fixed;
+  }
+
+  .mobile-menu.active {
+    position: fixed;
+    transition: none;
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+/* CÓDIGO DO MENU DA BARRA DO TOPO */
+        
+/* BANNERS */
+.retangulotopo {
+          width: 94%;
+          height: auto;
+          border-radius: 3vh; 
+          background-color: rgb(255, 255, 255);
+          z-index: 1;
+          font-family: "Coolvetica", sans-serif;
+          position: relative;
+          left: 50%;
+          transform: translate(-50%, 0);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          opacity: 100%;
+          margin-bottom: 5vh;
+          margin-top: 20vh;
+        }
+
+        .retangulo {
+          width: 94%;
+          height: auto;
+          border-radius: 3vh; 
+          background-color: rgb(255, 255, 255);
+          z-index: 1;
+          font-family: "Coolvetica", sans-serif;
+          position: relative;
+          left: 50%;
+          transform: translate(-50%, 0);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          opacity: 100%;
+          margin-bottom: 5vh;
+          margin-top: 5vh;
+        }
+    
+        #titulobanner {
+          color: black; 
+          font-size:5vh; 
+          text-align: right; 
+          user-select: none;
+          position: relative;
+          margin-right: 1vh;
+          margin-left: 15%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        #textobanner {
+          position: relative;  
+          color: black; 
+          font-size: 4vh; 
+          text-align: right; 
+          user-select: none;
+          margin-right: 1vh;
+          margin-top: 30vh;
+          margin-left: 30%;
+          padding-bottom: 5vh;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        #textobannerlink {
+          position: relative;  
+          color: black; 
+          font-size: 4vh; 
+          text-align: right; 
+          user-select: none;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+       
+        #textobotao {
+          position: relative;  
+          color: black; 
+          text-align: right; 
+          user-select: none;
+          margin-left: 1vh;
+          margin-bottom: 5vh;
+        }
+
+        #botaointeracao {
+          position: relative; 
+          color: red; 
+          border-radius: 3vh; 
+          font-family: "Coolvetica", sans-serif; 
+          font-size: 3vh; 
+          padding: 2vh;
+          opacity: 0.9;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        #botaointeracao:hover {
+          opacity: 0.8;
+          cursor: pointer;
+        }
+        
+/* BANNERS */
+
+/* NOTICIAS */
+
+.noticias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: auto;
+  height: 100%;
+}
+
+.noticia {
+  position: relative;
+  width: 300px;
+  min-width: 222px;
+  height: 100%;
+  text-align: center;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  border-radius: 10px;
+  text-overflow: ellipsis;
+}
+
+.noticia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+#textonoticia {
+  position: relative;  
+  color: black; 
+  font-size: 4vh; 
+  text-align: right; 
+  user-select: none;
+  margin-right: 1vh;
+  margin-top: 5vh;
+  margin-left: 30%;
+  padding-bottom: 5vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listanoticia {
+  position: relative;  
+  color: black; 
+  font-size: 4vh; 
+  text-align: right; 
+  user-select: none;
+  margin-right: 1vh;
+  margin-top: 5vh;
+  margin-left: 30%;
+  padding-bottom: 5vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.noticia h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "poppins", sans-serif;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.noticia h1 {
+  font-family: "poppins", sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+   display: flex;
+   color: #fff;
+   transition: all 1s ease;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   margin-bottom: 5%;
+  }
+
+.noticia p {
+  font-family: "poppins", sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+   
+}
+
+.noticia a {
+  text-align: left;
+  margin-left: 2%;
+  position: absolute;
+  background-color: transparent;
+}
+
+.textodobotao {
+  width: 100%;
+  height: 100%;
+  text-align: Left;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: transparent;
+}
+
+.noticia p {
+  text-align: center;
+}
+
+.mais-info a {
+ background-color: transparent;
+}
+
+.noticia .mais-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.noticia:hover img {
+  transform: scale(1.1);
+}
+
+.noticia:hover .mais-info {
+  opacity: 1;
+}
+
+.noticia .mais-info a {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.noticias {
+  display: flex;
+  height: 20rem;
+  gap: 5rem;
+  display: inline-block;
+}
+
+.noticias > div {
+  flex: 5;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all .8s ease;
+  opacity: 0.8;
+}
+
+.noticias > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticias > div:hover {
+  flex: 5;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.noticias {
+  display: flex;
+  height: 20rem;
+  gap: 1rem;
+}
+
+.noticias > div {
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all .8s ease;
+}
+
+.noticias > div:hover {
+  flex: 5;
+}
+
+/* NOTICIAS */
+       
+/* BOTÃO DE VOLTAR AO TOPO DA PÁGINA */
+        #btntop {
+          position: fixed;
+          bottom: 5vh;
+          right: 1vh;
+          width: 15vh;
+          height: 15vh;
+          background-color: rgba(0, 247, 255, 0.5);
+          border-radius: 50%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          z-index: 1;
+        }
+  
+        .arrow {
+          border: solid rgba(204, 0, 255, 0.5);
+          border-width: 0 3vh 3vh 0;
+          padding: 2vh;
+          display: inline-block;
+          position: relative;
+          top: 1vh;
+        }
+  
+        .up {
+          transform: rotate(-135deg);
+          -webkit-transform: rotate(-135deg);
+        }  
+/* BOTÃO DE VOLTAR AO TOPO DA PÁGINA */        
+  
+/* BARRA DE ROLAGEM */  
+        ::-webkit-scrollbar {
+          width: 2vh;
+          background-color: rgb(0, 247, 255);
+          border: 1vt solid white;
+        }
+  
+        ::-webkit-scrollbar-thumb {
+          background-color: purple;
+        }
+/* BARRA DE ROLAGEM */ 
+
+/* ESTILIZAÇÃO DO RODAPE */
+         #rodape {
+         background-color: #333;
+         padding: 1vh;
+         text-align: center;
+         align-items: center; 
+         position: relative;
+         width: 100vt;
+         height: 40vt;
+         bottom: 0;
+         user-select: none;
+        }
+
+        #titulorodape {
+         position: relative;
+         color: #fff;
+         font-family: "Coolvetica", sans-serif;
+         font-size: 6vh;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         margin-top: 2vh;
+        }
+
+        #textorodape {
+         font-size: 4vh;
+         color: #fff;
+         font-family: "Coolvetica", sans-serif;
+         margin-bottom: 2vh;
+         overflow: hidden;
+         text-overflow: ellipsis;
+        }
+
+          #redessociais {
+            width: 8vh; 
+            height: 6vh;
+            margin-top: 3vh;
+          }
+          
+          #redessociais:hover {
+            opacity: 0.7;
+            cursor: pointer;
+          }
+
+/* ESTILIZAÇÃO DO RODAPE */       
